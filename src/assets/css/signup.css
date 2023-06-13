@@ -1,0 +1,99 @@
+.signupContainer{
+    background-image: url('../images/signup.jpg');
+    /* background-color: linear-gradient(to top, #151934, #071226); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width: 100vw;
+}
+
+.signupBox{
+    /* margin-top: 50px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    height: auto;
+    width: 30vw;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135,0.37);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+}
+
+.welcome{
+    margin: 3rem 0 2rem 0;
+    color: white;
+    font-weight:bold;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+}
+
+.box{
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135,0.37);
+    border-radius: 2rem;
+    width: 80%;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    color: #3c354e;
+    font-size: 1rem;
+    font-weight: bold;
+    &:focus{
+        display: inline-block;
+        box-shadow: 0 0 0 0.2rem #e7e4ef99;
+        backdrop-filter: blur(12rem);
+        border-radius: 2rem;
+    }
+    &::placeholder{
+        color: #e7e4ef99;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
+
+.buttonContainerSignup{
+    margin: 1rem 0 2rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn2{
+    background: linear-gradient(to right, #14163c 0%, #03217b 79%);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    width:60%;
+    height: 3rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.alreadyAccount{
+    font-size: 10px;
+}
+
+.loggedin{
+    color: #ffffff;
+}
+
+.SignUpSelect{
+    width: 80%;
+}

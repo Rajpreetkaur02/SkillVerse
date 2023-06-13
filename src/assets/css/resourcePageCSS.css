@@ -1,0 +1,125 @@
+
+.ResourcePageContainer{
+    width: 100%;
+    background: linear-gradient(to top , #151934 , #071226);
+}
+
+/*------- search bar CSS ------ */
+
+.searchandaddcolumn{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bar {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.search_bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.search_bar button {
+    border: 0;
+    border-radius: 0 30px 30px 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.search_bar ::placeholder{
+    color: rgb(110, 107, 102);
+}
+
+
+.ResourceAdd button{
+    padding: 15px;
+    color: rgb(178, 196, 196);
+    border-radius: 10px;
+    background-color: rgb(25, 25, 78);
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.ResourceAdd button:hover{
+    background-color: rgb(138, 138, 185);
+
+}
+
+/* -------- cards CSS ------- */
+
+
+
+
+.ResourcePageAllCards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ResourcePageCard{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+
+.ResourcePageCard:hover{
+    transform: translateY(-5px);
+}
+
+.Resourcecardimg{
+    width: 100%;
+    height: 200px;
+}
+
+.ResourcePageContent{
+    flex-grow: 1;
+}
+
+.ResourcePageTitle{
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgb(179, 179, 233);
+}
+
+.ResourcePageDescription{
+    font-size: 14px;
+    color: #888;
+}
+
+.ResourcePagebutton{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: rgb(176, 185, 156);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 70px;
+    transition: background-color 0.3s;
+}

@@ -1,0 +1,205 @@
+.MentorContainer {
+  width: 100%;
+  background: linear-gradient(to top, #151934, #071226);
+  min-height: 100vh;
+}
+.MentorHead {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.BecomeMentorButton {
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  background: rgb(29, 227, 29);
+  cursor: pointer;
+  font-size: 15px;
+  color: #000;
+  top: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+.MentorGridCont {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  row-gap: 30px;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+}
+
+@media screen and (max-width: 1250px) {
+  .MentorGridCont {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .MentorGridCont {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 670px) {
+  .MentorGridCont {
+    grid-template-columns: auto;
+  }
+}
+.MentorCardContainer {
+  padding: 15px;
+  margin: 0 auto;
+  background: #232a57;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  box-shadow: #000 0px 0px 15px;
+  height: auto;
+  border-radius: 10px;
+  border: solid 1px #000;
+}
+.MentorCardProfile {
+  border: #000 solid 1px;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0px 0px 15px 1px #000;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.MentorCardName {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.MentorCardHead {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+}
+.MentorCardLinks,
+.MentorComm {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+}
+.MentorChat {
+  padding: 5px 25px;
+  border-radius: 10px;
+  background: rgb(121, 201, 0);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.MentorCall {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: rgb(195, 136, 220);
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+/* Modal */
+
+.MentorModalContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: 100%;
+  background: #232a57;
+}
+.MentorModalInputCont {
+  width: 100%;
+  position: relative;
+  display: flex;
+  /* justify-content:; */
+  gap: 20px;
+  align-items: center;
+}
+.MentorModalInput {
+  outline: none;
+  width: 70%;
+  border: 1px #fff solid;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.MentorModalcross {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 3px dotted #000;
+}
+
+.file-upload-button {
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.file-upload-button:hover {
+  background-color: #45a049;
+}
+
+.file-upload-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.MentorModalPreview{
+      color: #45a049;
+      font-weight: 700;
+      font-size: 1.3rem;
+      text-decoration: none !important;
+}
+
+.SelectBoxMentorModal , .SelectBoxMentorModalNot{
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border: 1px solid #000;
+}
+.SelectBoxMentorModalNot{
+  background: #45a049;
+}
+.HiddenNameInput{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}

@@ -1,0 +1,295 @@
+.profileContainer{
+    background: linear-gradient(to top , #151934 , #071226);
+    background-size: cover;
+    height:auto;
+    width: 100%;
+    display:flex;
+    /* align-items: center; */
+    /* text-align: center; */
+
+}
+
+.imgContainer{
+    background-color: #090e16;
+    margin-left: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding-right: 100px;
+}
+
+
+.pImg{
+    width: 150px;
+    margin: 90px 45px 10px 150px;
+    /* padding: 20px; */
+}
+.username{
+    margin: 0px 45px 10px 165px;
+    padding: 15px;
+    color: bisque;
+    text-transform: uppercase;
+}
+.rightSide{
+    width: 100%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.overview{
+    height: auto;
+    width: 80%;
+    margin: auto auto 0;
+}
+
+.myprojects, .myapplications, .myresources{
+    min-height: 20vh;
+    height: auto;
+    width: 80%;
+    margin: auto auto 0;
+    margin-top: 7%;
+    text-align: center;
+}
+
+.about span, .techstack span{
+    font-size: 1.3rem;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-weight: 600;
+}
+
+.aboutmsg{
+    width: 100%;
+    min-height: 15vh;
+    height: auto;
+    border: 1px solid #fff;
+    margin: 2% 0;
+    border-radius: 20px;
+}
+
+.techstackbox{
+    width: 100%;
+    min-height: 15vh;
+    height: auto;
+    border: 1px solid #fff;
+    margin: 2% 0;
+    border-radius: 20px;
+}
+
+.myprojectcontainer{
+    margin-top: 3%;
+    text-align: center;
+}
+
+.myprojects span, .myapplications span{
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.myprojectcontainer{
+    margin-top: 5%;
+    display:flex;
+    justify-content: space-between;
+    height: 20vh;
+    border-bottom: 1px solid grey;
+}
+
+.myprojectcontainer div{
+    text-align: left;
+}
+
+.projname{
+    color: pink;
+    font-size: 1.5rem;
+}
+
+.projdesc{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.createdat{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.projdeletebtn{
+    padding: 5px 25px;
+  border-radius: 10px;
+  background: rgb(121, 201, 0);
+  border: 1px solid #000;
+  cursor: pointer;
+  height: 30%;
+  color: weight;
+}
+
+.emptyprojectcontainer{
+    width: 100%;
+    margin-top: 3%;
+    height: 20vh;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.profilelinks{
+    width: 100%;
+    display: flex;
+    color: #fff;
+    font-size: 2.3rem;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.profilelinks div{
+    margin: 20px;
+}
+
+.Editbtn{
+    /* margin-left: 50%; */
+    border: none;
+    background: rgb(121, 201, 0);
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.aboutmsgtrue{
+    margin-top: 3%;
+    color: #fff;
+    min-height: 20vh;
+    height: auto;
+}
+
+.aboutmsg{
+    color: grey;
+    text-align: center;
+    border: 1px solid grey;
+}
+
+.editTechnologies span{
+    border-radius: 1rem;
+    padding: 5px 10px;
+    text-align: center;
+    background: linear-gradient(245deg, #1ee89c, #957bf0);
+    font-weight: 600;
+    width: auto;
+    margin: 15px 2px;
+    font-size: 0.8rem;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    border: none;
+    color: #000;
+
+}
+
+.LogoutButton{
+    background: rgb(234, 98, 93);
+      color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 30%;
+      margin-left: 5%;
+}
+
+.profliebtncontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.editprofilecontainer{
+    border-radius: 5px;
+    padding: 20px;
+    min-height: 90vh;
+    background: linear-gradient(to top, #151934, #071226);
+    color: #fff;
+}
+
+.editLinkedinLinkContainer, .editgithubLinkContainer{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.about{
+    background-color: #090e16;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.techstack{
+    background-color: #090e16;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.myprojects{
+    background-color: #090e16;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.myapplications{
+    background-color: #090e16;
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.aboutinput textarea{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    min-height: 15vh;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.profiletechnologiesdesc input, .editlinkbox input{
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    min-height: 5vh;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.technologiesdesclist{
+    display: inline-block;
+}
+
+.technologiesdesclist span{
+    border-radius: 1rem;
+    padding: 8px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    /* padding: 5px; */
+    text-align: center;
+    background: linear-gradient(245deg, #1ee89c, #957bf0);
+    font-weight: 600;
+    width: auto;
+    margin: 2px;
+    font-size: 0.8rem;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.profiletechnologiesdesc button{
+    margin-top: 10px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px;
+}

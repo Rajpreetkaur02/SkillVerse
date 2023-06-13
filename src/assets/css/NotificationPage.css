@@ -1,0 +1,114 @@
+.NotificationContainer{
+      width: 100%;
+      background: #081327;
+      padding: 15px;
+      min-height: 90vh;
+}
+.NotificationHeaderClass{
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+}
+.NotificationHr{
+      margin: 10px 0px;
+      height: 1px;
+}
+
+.NotificationHeader{
+      padding: 10px;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #F98A83;
+      border: 1px solid #000;  
+}
+.NotificationHeaderActive{
+      background: #B944DC !important;
+}
+.NotificationPageHead{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+}
+.NotificationCardCont{
+      width: 50%;
+      position: relative;
+      height: 90px;
+      color: #fff;
+      padding: 15px;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-start;
+      align-items: center;
+      border: 1px solid #000;
+      background: #364f9c;
+}
+.applicationsCardCont{
+      width: 50%;
+      color: #fff;
+      position: relative;
+      height: 90px;
+      padding: 15px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #000;
+      background: #364f9c
+}
+
+.NotificationCardContf{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+}
+.IconNotificationCard{
+      width: 70px;
+      border: #000 solid 1px;
+      height: 70px;
+      border-radius: 100%;
+}
+.NotificationEditButton{
+      position: absolute;
+      top: 5px;
+      cursor: pointer;
+      right: 10px;
+}
+
+.NotificationOption{
+      position: absolute;
+      top: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #000;
+      background: #fff;
+      right: 10px;
+      width: 120px;
+      padding: 10px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+}
+.statusContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+}
+.stausApplication{
+      font-size: 1.2rem;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 5px 15px;
+      background: rgb(233, 98, 98);
+}
+
+.statusAccepted{
+      font-size: 1.2rem;
+      color: #000;
+      cursor: pointer;
+      border-radius: 10px;
+      padding: 5px 15px;
+      background: rgb(103, 233, 98);
+}
