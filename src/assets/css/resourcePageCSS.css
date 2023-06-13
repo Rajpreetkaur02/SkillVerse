@@ -32,33 +32,14 @@
     font-size: 15px;
 }
 
-.search_bar button {
-    border: 0;
-    border-radius: 0 30px 30px 0;
-    width: 30px;
-    height: 30px;
+.search_bar img {
+    margin: 0 10px 0 0;
     cursor: pointer;
 }
 
 
 .search_bar ::placeholder{
     color: rgb(110, 107, 102);
-}
-
-
-.ResourceAdd button{
-    padding: 15px;
-    color: rgb(178, 196, 196);
-    border-radius: 10px;
-    background-color: rgb(25, 25, 78);
-    border: none;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-.ResourceAdd button:hover{
-    background-color: rgb(138, 138, 185);
-
 }
 
 /* -------- cards CSS ------- */
