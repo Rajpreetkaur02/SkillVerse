@@ -14,8 +14,8 @@ const Navbar = () => {
   const [pathname, setPathname] = useState(location.pathname);
   const [chooseimage, setchooseimage] = useState(false);
   const [username, setusername] = useState("");
-  const [opennotice , setopennotice] = useState("");
-  const [noticedata , setnoticedata] = useState([]);
+  const [opennotice, setopennotice] = useState("");
+  const [noticedata, setnoticedata] = useState([]);
   useEffect(() => {
     setPathname(location.pathname);
   }, [location]);
@@ -37,10 +37,10 @@ const Navbar = () => {
       }
     });
   }, [userId]);
-  useEffect(()=>{
-    let arr =[];
-    const dataq = query(ref(db , "Notifications") , orderByChild("userId") , equalTo(userId));
-    get(dataq).then((snapshot)=>{
+  useEffect(() => {
+    let arr = [];
+    const dataq = query(ref(db, "Notifications"), orderByChild("userId"), equalTo(userId));
+    get(dataq).then((snapshot) => {
       const data = snapshot.val();
       if(data){
       const datakey = Object.keys(data);
@@ -48,12 +48,19 @@ const Navbar = () => {
       {
         arr.push(data[datakey[i]]);
       }
+      if (data) {
+        const datakey = Object.keys(data);
+        for (let i = 0; i < datakey.length; i++) {
+          arr.push(data[datakey[i]]);
+        }
+        setnoticedata(arr);
+      }
       // console.log(arr)
       setnoticedata(arr);
     }
       // console.log("hello" , snapshot.val())
     })
-  },[userId]);
+  }, [userId]);
   const navigate = useNavigate();
   const Toast = Swal.mixin({
     toast: true,
@@ -92,9 +99,9 @@ const Navbar = () => {
       ) : (
         <div className="navbar">
           <div className="navleft">
-          <div  onClick={() => {
-                navigate("/");
-              }} className="skillVerse">SkillVerse</div>
+            <div onClick={() => {
+              navigate("/");
+            }} className="skillVerse">SkillVerse</div>
             <img
               onClick={() => {
                 navigate("/");
@@ -121,10 +128,11 @@ const Navbar = () => {
                 >
                   Resources
                 </li>
-                <li>Contribution</li>
+                <li onClick={()=>{navigate("/chat");setopennotice(false);}}>Chats</li>
                 <li
                   onClick={() => {
                     navigate("/projects");
+                    setopennotice(false);
                   }}
                 >
                   Projects
@@ -179,7 +187,7 @@ const Navbar = () => {
                     alt="profile"
                   />
                 )}
-                <div className="NavbarNotification" onClick={()=>{setopennotice(!opennotice)}}>
+                <div className="NavbarNotification" onClick={() => { setopennotice(!opennotice) }}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="25"
@@ -193,13 +201,13 @@ const Navbar = () => {
                   <div className="NotificationRed"></div>
                 </div>
                 {
-                  opennotice === true && 
+                  opennotice === true &&
                   <div className="NotificationBody">
                     <div className="Notificationcont">Notification</div>
                     <hr></hr>
                     <div className="NotificationDiv">
                       {
-                        noticedata.map((value , idx)=>(
+                        noticedata.map((value, idx) => (
                           <div key={idx}>{value?.text}</div>
                         ))
                       }
@@ -208,7 +216,7 @@ const Navbar = () => {
                       }
                     </div>
                     <div className="NotificationShow">
-                      <div className="NotificationShowMore" onClick={()=>{navigate('/Notifications') ; setopennotice(false)}}>Show More....</div>
+                      <div className="NotificationShowMore" onClick={() => { navigate('/Notifications'); setopennotice(false) }}>Show More....</div>
                     </div>
                   </div>
                 }
