@@ -102,14 +102,6 @@ const Navbar = () => {
             <div onClick={() => {
               navigate("/");
             }} className="skillVerse">SkillVerse</div>
-            <img
-              onClick={() => {
-                navigate("/");
-                setopennotice(false);
-              }}
-              src={logo}
-              alt=""
-            />
             <ul>
               <div className="navbar-features">
                 <li
