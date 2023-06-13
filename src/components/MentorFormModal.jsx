@@ -37,8 +37,8 @@ const MentorFormModal = ({ openmodal, setopenmodal }) => {
       }
     });
     if(openname === true){
-      set(ref(db, `Mentors/${unqiueId}`), {
-        id: unqiueId,
+      set(ref(db, `Mentors/${userId}`), {
+        id: userId,
         name: hiddenName,
         headline: headline,
         github: github,
@@ -46,8 +46,8 @@ const MentorFormModal = ({ openmodal, setopenmodal }) => {
         twiter: twiter,
       });
     }else{
-      set(ref(db, `Mentors/${unqiueId}`), {
-        id: unqiueId,
+      set(ref(db, `Mentors/${userId}`), {
+        id: userId,
         name: arr[3],
         headline: headline,
         github: github,

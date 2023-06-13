@@ -40,7 +40,7 @@ const MentorCard = ({data}) => {
     // console.log(data)
     if(data?.id && userId)
     {
-      await set(refdb(db , `Chats/${data?.id  + "-"+userId}`), {
+      await set(refdb(db , `Chats/${ userId + "-" + data?.id}`), {
         senderId : userId ,
         recieverId : data?.id,
         messages : [],

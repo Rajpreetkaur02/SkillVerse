@@ -13,7 +13,6 @@
 }
 .ChatHeader{
     width: 100%;
-    /* height: 70vh; */
     color: #fff;
     text-align: center;
     font-size: 3rem;
@@ -43,6 +42,7 @@
 }
 .chat-container {
     width: 100%;
+    height: 90vh;
     margin: 0 auto;
     display: flex;
   }
@@ -59,31 +59,56 @@
   }
   
   .chat-messages {
-    padding: 15px;
+    width: 100%;
+    gap: 20px;
+    padding: 5px;
+    display: flex;
+    height: 72vh;
+    overflow-y: scroll;
+    flex-direction: column;
   }
   
-  .message {
-    margin-bottom: 20px;
-  }
-  
-  .message.received {
+  .message-received {
+    align-items: flex-start;
+    border-radius: 5px;
     background-color: #f2f2f2;
+    width: 50%;
+    height: auto;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+  }
+  .message-div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
   
-  .message.sent {
+  .message-sent {
     background-color: #DCF8C6;
     text-align: right;
+    align-items: flex-start;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    /* right: -22px; */
+    height: auto;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
   }
   
   .message-sender {
     font-weight: bold;
     color: #333;
-    margin-bottom: 5px;
+
   }
   
   .message-content {
-    padding: 10px;
     border-radius: 5px;
+    text-align: left;
   }
   
   .message-time {
@@ -93,20 +118,26 @@
   
   .chat-input {
     display: flex;
-    padding: 15px;
+    width: 100%;
+    /* padding: 15px; */
     align-items: center;
+    justify-content: space-between;
   }
   
   .chat-input input[type="text"] {
-    flex: 1;
-    padding: 10px;
+    /* flex: 1; */
+    width: 85%;
+    /* padding: 10px; */
+    font-size: 1.3rem;
     border-radius: 5px;
+    outline: none;
+    padding: 15px;
     border: 1px solid #ccc;
     margin-right: 10px;
   }
   
   .chat-input button {
-    padding: 10px 20px;
+    padding: 18px 40px;
     background-color: #075E54;
     color: #fff;
     border: none;
@@ -114,6 +145,9 @@
     cursor: pointer;
   }
   .chatcont{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
     width: 70%;
     height: 90vh;
   }
@@ -130,10 +164,10 @@
     background: #075E54;
   }
   .ChatListDiv{
-    width: 90%;
+    width: 100%;
     cursor: pointer;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -144,6 +178,6 @@
     width: 50px;
   }
   .ChatListText{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
