@@ -58,31 +58,31 @@ const ApplicationFormModal = ({ openmodal, setopenmodal, projid , ownerId }) => 
         e.preventDefault();
         const unqiueId = uid(15);
 
-        // var templateParams = {
-        //     from_name: fromname,
-        //     from_email: fromEmail,
-        //     to_email: toEmail,
-        //     projname: projname,
-        //     message: message,
-        //     linkedinlink: linkedinlink,
-        //     githublink: githublink,
-        // };
+        var templateParams = {
+            from_name: fromname,
+            from_email: fromEmail,
+            to_email: toEmail,
+            projname: projname,
+            message: message,
+            linkedinlink: linkedinlink,
+            githublink: githublink,
+        };
 
-        // emailjs.send('service_54jfv0a', 'template_z8d4noh', templateParams, '5acFbYup17yeX42QV')
-        //     .then((result) => {
-        //         console.log(result.text);
-        //         Toast.fire({
-        //             title: "Application submitted successfully",
-        //             icon: "success",
-        //         });
-        //     }, (error) => {
-        //         console.log(error.text);
-        //         Toast.fire({
-        //             title: "An error has occured, Try again!",
-        //             icon: "error",
-        //         });
-        //     });
-        // e.target.reset();
+        emailjs.send('service_54jfv0a', 'template_z8d4noh', templateParams, '5acFbYup17yeX42QV')
+            .then((result) => {
+                console.log(result.text);
+                Toast.fire({
+                    title: "Application submitted successfully",
+                    icon: "success",
+                });
+            }, (error) => {
+                console.log(error.text);
+                Toast.fire({
+                    title: "An error has occured, Try again!",
+                    icon: "error",
+                });
+            });
+        e.target.reset();
 
         //in this database we have projects and the applicants in this project
         set(ref(db, `ProjectApplications/${unqiueId}`), {
@@ -92,7 +92,7 @@ const ApplicationFormModal = ({ openmodal, setopenmodal, projid , ownerId }) => 
             id : unqiueId,
             status : 'pending',
             // contributerEmail: fromEmail,
-            ownerId : ownerId,
+            //ownerId : ownerId,
             applicantId : userId,
             timestamp: serverTimestamp(),
         })
