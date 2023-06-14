@@ -13,6 +13,7 @@ import Profile from './pages/Profile';
 import ResourceDescPage from './pages/ResourceDescPage';
 import ChatPage from './pages/ChatPage';
 import Notification from './pages/Notification';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/chat' element={<ChatPage/>}></Route>
         <Route path='/Notifications' element={<Notification/>}></Route>
       </Routes>
+      <Footer/>
     </div>
   );
 
