@@ -92,7 +92,7 @@ const ResourcePage = () => {
               </div>
             </div>
           </div>
-          <div className="ResourcePageCard">
+          {/* <div className="ResourcePageCard">
             <img src={javaLogoPic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
               <h1 className='ResourcePageTitle'>Learn React</h1>
@@ -101,8 +101,8 @@ const ResourcePage = () => {
                 <button className='ResourcePagebutton'>See Resources</button>
               </div>
             </div>
-          </div>
-          <div className="ResourcePageCard">
+          </div> */}
+          {/* <div className="ResourcePageCard">
             <img src={ReactPic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
               <h1 className='ResourcePageTitle'>Learn React</h1>
@@ -111,8 +111,8 @@ const ResourcePage = () => {
                 <button className='ResourcePagebutton'>See Resources</button>
               </div>
             </div>
-          </div>
-          <div className="ResourcePageCard">
+          </div> */}
+          {/* <div className="ResourcePageCard">
             <img src={ReactPic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
               <h1 className='ResourcePageTitle'>Learn React</h1>
@@ -121,7 +121,7 @@ const ResourcePage = () => {
                 <button className='ResourcePagebutton'>See Resources</button>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
