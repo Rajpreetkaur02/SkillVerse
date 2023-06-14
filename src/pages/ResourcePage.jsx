@@ -9,107 +9,141 @@ import expressPic from '../assets/images/express_img.png'
 import cPlusPlusPic from '../assets/images/C++logoPic.png'
 import javaLogoPic from '../assets/images/JavaPic.png'
 import { Navigate, useNavigate } from 'react-router'
-import {GrAdd} from 'react-icons/gr'
-import ResourcePageModal from '../components/ResourcePageModal'
+import { GrAdd } from 'react-icons/gr'
 import MentorFormModal from '../components/MentorFormModal'
+import LecturePageModal from '../components/LecturePageModal'
+import NotesPageModal from '../components/NotesPageModal'
+import ArticlePageModal from '../components/ArticlePageModal'
 
 const ResourcePage = () => {
-  const [openmodal,setopenmodal] = useState(false);
-  const navigate =useNavigate();
+  const [openmodal, setopenmodal] = useState(false);
+  const [openLecturemodal, setopenLecturemodal] = useState('');
+  const [openNotesmodal, setopenNotesmodal] = useState('');
+  const [openArticlemodal, setopenArticlemodal] = useState('');
+
+  const navigate = useNavigate();
   return (
+    
     <>
-    <ResourcePageModal openmodal={openmodal} setopenmodal={setopenmodal}/>
-    <div className='ResourcePageContainer'>
-      
-      <div className="searchandaddcolumn">
+    <LecturePageModal openmodal={openLecturemodal} setopenmodal={setopenLecturemodal} />
+    <NotesPageModal openmodal={openNotesmodal} setopenmodal={setopenNotesmodal} />
+    <ArticlePageModal openmodal={openArticlemodal} setopenmodal={setopenArticlemodal} />
+
+      <div className='ResourcePageContainer'>
+
+        {/* <div className="searchandaddcolumn">
         <div className="search_bar">
           <input type="search" placeholder='Search Courses' />
-          <img src={searchPic} alt="" />
+          <button ><img src={searchPic} alt="" /></button>
+        </div>
+        <div className="ResourceAdd">
+          <button onClick={() =>{
+            setopenmodal(!openmodal);
+          }} > <GrAdd/> Add Resources</button>
+        </div> 
+      </div> */}
+        <div className="AddResources">
+          <h2>Contribute</h2>
+          <div className="ResourceCardContainer">
+            <div className="addLectures" onClick={() => { setopenLecturemodal(!openLecturemodal); }}>
+              <h3>Add Video Lectures</h3>
+              <p class="small">Share your most trusted resource with us!</p>
+            </div>
+            <div className="addNotes" onClick={() => { setopenNotesmodal(!openNotesmodal); }}>
+              <h3>Add Notes</h3>
+              <p class="small">Got some amazing notes! Share with the community</p>
+            </div>
+            <div className="addLinks" onClick={() => { setopenArticlemodal(!openArticlemodal); }}>
+              <h3>Add Articles</h3>
+              <p class="small">Share your favorite articles that helped you in your journey with us with us!</p>
+            </div>
+          </div>
+        </div>
+        <h2 id='resourceHeading'>Resources</h2>
+        <div className="ResourcePageAllCards">
+
+          <div className="ResourcePageCard">
+            <img src={htmlcssjsPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button onClick={() => { navigate(`/ResourceDesc/${'react'}`) }} className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={nodePic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={socketioPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={expressPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={cPlusPlusPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={javaLogoPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={ReactPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
+          <div className="ResourcePageCard">
+            <img src={ReactPic} alt="" className='Resourcecardimg' />
+            <div className="ResourcePageContent">
+              <h1 className='ResourcePageTitle'>Learn React</h1>
+              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <div className='buttondiv'>
+                <button className='ResourcePagebutton'>See Resources</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="ResourcePageAllCards">
-        <div className="ResourcePageCard">
-          <img src={htmlcssjsPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>HTML CSS JS </h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button onClick={()=>{navigate('/ResourceDesc/1')}} className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={nodePic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>Node Js</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={socketioPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>SocketIO</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={expressPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>Express JS</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={cPlusPlusPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>C++</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={javaLogoPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>Java</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={ReactPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>React</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-        <div className="ResourcePageCard">
-          <img src={ReactPic} alt="" className='Resourcecardimg' />
-          <div className="ResourcePageContent">
-            <h1 className='ResourcePageTitle'>Learn React</h1>
-            <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-            <div className='buttondiv'>
-              <button className='ResourcePagebutton'>See Resources</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     </>
   )
 }

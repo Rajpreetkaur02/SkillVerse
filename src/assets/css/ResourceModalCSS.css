@@ -5,12 +5,13 @@
     justify-content: space-between;
     height: 100%;
     gap: 15px;
-    background: linear-gradient(to right, rgb(10, 10, 73),rgb(224, 114, 224));
+    background: linear-gradient(to top, #151934, #071226);
     padding: 20px;
 }
 
 .ResourceModalHeading h1{
     text-align: center;
+    color: beige;
 }
 
 .ResourceModalContainer label{
@@ -24,19 +25,27 @@
 
 .ResourceModalContainer input{
     background: transparent;
-    border: 2px solid rgb(13, 13, 29);
+    border: 2px solid #fff;
     border-radius: 20px;
     padding: 10px;
-    text-decoration: none;
+    /* text-decoration: none; */
     width: 70%;
+    color: #fff;
 }
 
 
 .ResourceSubmit input{
-    
-    background:linear-gradient(to top, rgb(84, 84, 126),white,rgb(94, 72, 72)) ;
-    padding: 12px;
-    width: 30%;
+    /* position: absolute; */
+  right: 20px;
+  padding: 10px;
+  background: rgb(29, 227, 29);
+  cursor: pointer;
+  font-size: 15px;
+  color: #000;
+  top: 20px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  width: 20%;
 }
 
 .ResourceSubmit{
@@ -44,8 +53,14 @@
     justify-content: center;
 }
 
-.ResourceSubmit input:hover{
-    cursor: pointer;
-    background:linear-gradient(to top, rgb(84, 84, 126),rgb(150, 112, 112),rgb(94, 72, 72)) ;
+.ResourceDesc textarea{
+    background: transparent;
+    border: 2px solid #fff;
+    width: 70%;
+    min-height: 15vh;
+    height: auto;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 5%;
+    color: #fff;
 }
-

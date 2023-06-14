@@ -9,12 +9,24 @@
     padding: 20px;
 }
 
+.ResourcePageDesc_Conatiner h1{
+    color:  rgb(29, 227, 29);
+}
+
+.ResourcePageDesc_Conatiner span{
+    color:  #fff;
+}
+
+.ResSideMenu{
+    width: 15%;
+}
+
 .ResDesc h1{
     color: beige;
 }
 
-.ResDesc{
-    text-align: center;
+.RescDesc{
+    display: flex;
 }
 
 
@@ -24,19 +36,26 @@
 
 .ResDescBar{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
+    margin-top: 13%;
 }
+
+
 
 .ResDescBar li{
     padding: 10px;
     cursor: pointer;
     color: beige;
+    width: 100%;
 }
 
 .ResDescBar li.active{
+    width: 100%;
     border-bottom: 2px solid #333;
 }
 
@@ -50,12 +69,12 @@
 }
 
 .ResourceOutContainer{
-    margin-top: 20px;
+    width: 100%;
+    padding: 10px 40px
 }
 
 .content-item {
     display: block;
-    text-align: center;
 }
 
 .addResourcesButton{
@@ -76,6 +95,7 @@
 .LecturesBlock{
     display: flex;
     flex-direction: column;
+    padding: 0%;
 }
 
 
@@ -93,4 +113,56 @@
 
 .LecturesBlock a:hover{
     color: #f88030;
+}
+
+.lecturecard{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+}
+
+.lecturecardtext{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.videoBottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.videoName{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.videoDesc{
+    color: #fff;
+}
+
+.videobottomicons{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.upvotes, .views{
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+#upvotesNum, #viewNum{
+    font-size: 1rem;
+}
+
+.upvotebtn{
+    background-color:  rgb(29, 227, 29);
+    border: none;
+    padding: 2px 15px;
+    border-radius: 10px;
+    font-weight: 600;
 }
