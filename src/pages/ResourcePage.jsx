@@ -63,10 +63,10 @@ const ResourcePage = () => {
         <div className="ResourcePageAllCards">
 
           <div className="ResourcePageCard">
-            <img src={htmlcssjsPic} alt="" className='Resourcecardimg' />
+            <img src={ReactPic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
               <h1 className='ResourcePageTitle'>Learn React</h1>
-              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <p className='ResourcePageDescription'>Discover the magic of React: Turning complex UI challenges into elegant solutions.</p> 
               <div className='buttondiv'>
                 <button onClick={() => { navigate(`/ResourceDesc/${'react'}`) }} className='ResourcePagebutton'>See Resources</button>
               </div>
@@ -75,28 +75,8 @@ const ResourcePage = () => {
           <div className="ResourcePageCard">
             <img src={nodePic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
-              <h1 className='ResourcePageTitle'>Learn React</h1>
-              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-              <div className='buttondiv'>
-                <button className='ResourcePagebutton'>See Resources</button>
-              </div>
-            </div>
-          </div>
-          <div className="ResourcePageCard">
-            <img src={socketioPic} alt="" className='Resourcecardimg' />
-            <div className="ResourcePageContent">
-              <h1 className='ResourcePageTitle'>Learn React</h1>
-              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
-              <div className='buttondiv'>
-                <button className='ResourcePagebutton'>See Resources</button>
-              </div>
-            </div>
-          </div>
-          <div className="ResourcePageCard">
-            <img src={expressPic} alt="" className='Resourcecardimg' />
-            <div className="ResourcePageContent">
-              <h1 className='ResourcePageTitle'>Learn React</h1>
-              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <h1 className='ResourcePageTitle'>Learn NodeJS</h1>
+              <p className='ResourcePageDescription'>Node.js enables you to build scalable network applications using JavaScript on the server-side.</p>
               <div className='buttondiv'>
                 <button className='ResourcePagebutton'>See Resources</button>
               </div>
@@ -105,8 +85,8 @@ const ResourcePage = () => {
           <div className="ResourcePageCard">
             <img src={cPlusPlusPic} alt="" className='Resourcecardimg' />
             <div className="ResourcePageContent">
-              <h1 className='ResourcePageTitle'>Learn React</h1>
-              <p className='ResourcePageDescription'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ullam esse ut deserunt atque ipsum nemo, natus eligendi numquam aliquam?</p>
+              <h1 className='ResourcePageTitle'>Learn C++</h1>
+              <p className='ResourcePageDescription'>C++ is a language that makes it easy to shoot yourself in the foot; but when you do, it gives you a bigger gun.</p>
               <div className='buttondiv'>
                 <button className='ResourcePagebutton'>See Resources</button>
               </div>

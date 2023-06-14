@@ -131,6 +131,7 @@
     max-width: 300px;
     box-sizing: border-box;
     transition: transform 0.3s;
+    height: auto;
 }
 
 
@@ -145,6 +146,7 @@
 
 .ResourcePageContent{
     flex-grow: 1;
+    height: auto;
 }
 
 .ResourcePageTitle{
@@ -155,7 +157,7 @@
 
 .ResourcePageDescription{
     font-size: 14px;
-    color: #888;
+    color: #fff;
 }
 
 .ResourcePagebutton{
