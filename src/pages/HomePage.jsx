@@ -16,7 +16,7 @@ const HomePage = () => {
       <ResourcesSection />
       <ProjectHelpSection/>
       <Contributions />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

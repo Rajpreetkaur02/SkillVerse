@@ -39,7 +39,7 @@ const ChatContent = ({ senderId, recieverId, issender }) => {
   }, [onsubmit]);
   useEffect(() => {
     if (issender === true) {
-      onValue(ref(db, `Chats/${senderId + "-" + recieverId}`), (snapshot) => {
+      onValue(ref(db, `Chats/${userId + "-" + recieverId}`), (snapshot) => {
         if (snapshot.val()) {
           const data = snapshot.val();
           // console.log(data);
@@ -80,7 +80,7 @@ const ChatContent = ({ senderId, recieverId, issender }) => {
         senderId: senderId,
         text: text,
       });
-      update(ref(db, `Chats/${senderId + "-" + recieverId}`), {
+      update(ref(db, `Chats/${userId + "-" + recieverId}`), {
         messages: temp,
       });
     } else {
@@ -91,7 +91,7 @@ const ChatContent = ({ senderId, recieverId, issender }) => {
         senderId: userId,
         text: text,
       });
-      update(ref(db, `Chats/${recieverId + "-" + senderId}`), {
+      update(ref(db, `Chats/${recieverId + "-" + userId}`), {
         messages: temp,
       });
     }
